@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户详情</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+            <h1>用户详情页</h1>
+            ID：{{ one_user.id }}<br>
+            用户名：{{ one_user.name }}<br>
+            关注数：{{ one_user.num }}<br>
+        <form action="{{ url_for('login') }}" method="post">
+            <input type="submit" value="关注">
+        </form>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改用户</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+        <form action="" method="post">
+            修改用户：<input type="text" name="name" placeholder="{{ one_user.name }}">
+            <input type="submit" value="确认修改">
+        </form>
+    {% endblock content %}
+</body>
+</html>
